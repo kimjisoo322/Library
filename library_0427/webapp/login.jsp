@@ -41,7 +41,9 @@
 		padding-top: 10px;
 	}
 	#info{
-		font-size: 0.9em;
+		font-size: 0.7em;
+		
+		
 	}
 </style>
 

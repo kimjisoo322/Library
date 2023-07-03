@@ -102,7 +102,8 @@ public class BookController extends HttpServlet{
 			req.setCharacterEncoding("utf-8");
 			
 			// 파일 등록 (파일 업로드)
-			String saveDirectory = "C:\\Users\\user\\Downloads\\library_0428\\library_0427\\webapp\\IMGES\\bookImg";
+			//	"C:\\Users\\user\\Downloads\\library_0428\\library_0427\\webapp\\IMGES\\bookImg";
+			String saveDirectory = "C:\\Users\\user\\git\\Library\\library_0427\\webapp\\IMGES\\bookImg";
 			MultipartRequest mr =  FileUtil.uploadFile(req, saveDirectory, 1024*1000);
 			
 			String ofile = mr.getFilesystemName("bookImg");
