@@ -7,15 +7,42 @@
 <head>
 <meta charset="UTF-8">
 <style>
-	body{
-		background-color:rgb(231, 254, 255);
+	body {
+		background-color: rgb(231, 254, 255);
+		display: flex;
+		justify-content: center ;
+		align-items: flex-start;
+		height: 100vh;
+		margin: 0;
+		padding-top: 50px; /* 추가: 위쪽 여백 설정 */
 	}
-	*{	
+	* {
 		text-decoration: none;
 		color: black;
 	}
-	
+	#login input{
+		border-color: white;
+		background-color:white; 
+		padding: 10px;
+		width: 150px;
+		border-radius: 10px;
+	}
 
+	#button input{
+		border-color : white;
+		width: 100px;
+		height: 30px;
+		border-radius: 10px;
+		background-color:white; 
+		 
+	}
+	#button {
+		padding-left: 35px;
+		padding-top: 10px;
+	}
+	#info{
+		font-size: 0.9em;
+	}
 </style>
 
 </head>
@@ -45,15 +72,14 @@
    		
     %>    
 
-
 <form action="./login/LoginAction.do" method="post">
 <aside id='rightside'>
 	<div class='side1'>
 <div class='loginbox'>
 	<div id='login'>	
 	
-
-<input type="text" name="userId" id="userId" placeholder='ID를 입력해주세요.' value ="<%=userId %>">
+<h2>📚꿈빛도서관📚</h2>
+<input type="text" name="userId" id="userId" placeholder='ID를 입력해주세요.' value ="<%=userId %>"><br><br>
 <input type="password" name="userpw" id="userpw" placeholder='PW를 입력해주세요.'>
                 
 	</div>
